@@ -1,15 +1,37 @@
 #include <gtest/gtest.h>
 #include "lib1.hpp"
-#include "lib2.hpp"
 
-TEST(dummy_test, this_should_pass) {
-  EXPECT_EQ(1, 1);
+// Test case for checking the PID controller's compute_speed function
+TEST(PidControllerTest, DecreasedSpeedTest) {
+    // Initialize a PidController with a desired speed of 50
+    PidController pid(50.0);
+
+    // // Get the initial actual speed
+    double initial_speed = pid.get_actual_speed();
+    
+    // Call compute_speed() multiple times and check if speed is moving toward the desired speed
+    double computed_speed = pid.compute_speed();
+    
+    // After one computation, speed should decrease (since the desired speed is 50, which is less than 100)
+    EXPECT_LT(computed_speed, initial_speed);  // Expect computed speed to be less than the initial speed
+    
+   
+}
+// Test case for checking the PID controller's compute_speed function
+TEST(PidControllerTest, IncreasedSpeedTest) {
+    // Initialize a PidController with a desired speed of 150
+    PidController pid(150.0);
+
+    // // Get the initial actual speed
+    double initial_speed = pid.get_actual_speed();
+    
+    // Call compute_speed() multiple times and check if speed is moving toward the desired speed
+    double computed_speed = pid.compute_speed();
+    
+    // After one computation, speed should increase (since the desired speed is 150, which is more than 100)
+    EXPECT_GT(computed_speed, initial_speed);  // Expect computed speed to be less than the initial speed
+    
+   
 }
 
-TEST(dummy_test, this_should_pass_too) {
-  EXPECT_EQ(my_function1(3), 3);
-}
 
-TEST(dummy_test, this_will_fail) {
-  EXPECT_EQ(my_function2(3.2), 3.2);
-}
