@@ -52,6 +52,32 @@
 # you will receive an output speed that is cal after one iteration/time step of the PID controller. (Here actual speed is set to 100)
 #************  END ****************
 
+
+#************STATIC CODE ANAYLYSIS *********************
+#Use clang-tidy for static code analysis (modify as needed):
+# if you need to install clang-tidy, do
+sudo apt install clang-tidy
+
+# run in the top-level project directory (eg., in cpp-boilerplate-v2/)
+clang-tidy -p ./ $( find . -name *.cpp | grep -v "/build/" )
+#************  END ****************
+
+
+#************Foramatting as per Google C++ style *********************
+# first install clangd-format, if needed
+sudo apt install clangd-format
+
+# Change to directory where your cpp and hpp files are located
+# Now, you can see the reformatted output
+clang-format -style=Google your_file.cpp
+
+# If you want to completely replace the source code (ie., keep changes in-place) do:
+clang-format -style=Google -i your_file.cpp
+
+#************  END ****************
+
+
+
 #************Build Doxygen docs*********************
 # Build docs:
   cmake --build build/ --target docs
