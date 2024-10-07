@@ -8,6 +8,11 @@
 - Driver : Keyur Borad - @KeyurBorad5
 - Navigator: Uthappa Madettira - @Uthappa13
 
+## Part2
+
+- Driver : Sarang - (https://github.com/sarangnair1998)
+- Navigator: Sounderya- (https://github.com/Sounderya22)
+
 ## Program
 - This PID controller has preset KP,KI,KD values
 - It has a preset actual/present speed, which is 100
