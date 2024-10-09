@@ -21,6 +21,12 @@
 - For example is entered desire speed is 50 then output speed would be calculated based on error difference of actual(100) and desired speed(50)
 
 
+## Potential Tests
+
+- Test for negative desired speed: Ensure the controller behaves correctly when the desired speed is negative or zero.
+- Simulate a large step change in the desired speed and ensure the controller responds correctly.
+- Test that resetting the PID controller clears its internal states (such as integral and previous error).
+
 ## Run program
 ```bash
 # Change the directory to pbm1_4
@@ -99,3 +105,4 @@ clang-format -style=Google -i your_file.cpp
 # Clean and start over:
   rm -rf build/
 #************  END ****************
+
