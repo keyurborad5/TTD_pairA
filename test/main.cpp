@@ -1,4 +1,5 @@
 #include <gtest/gtest.h>
+
 #include "lib1.hpp"
 
 int main(int argc, char** argv) {

@@ -1,6 +1,6 @@
 # TDD Pair A
 # C++ Boilerplate v2 Badges
-![CICD Workflow status](https://github.com/keyurborad5/TTD_pairA/actions/workflows/run-unit-test-and-upload-codecov.yml/badge.svg) [![codecov](https://codecov.io/gh/keyurborad5/TTD_pairA/branch/main/graph/badge.svg)](https://codecov.io/gh/keyurborad5/TTD_pairA) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+![CICD Workflow status](https://github.com/sarangnair1998/TTD_pairB/actions/workflows/run-unit-test-and-upload-codecov.yml/badge.svg) [![codecov](https://codecov.io/gh/sarangnair1998/TTD_pairB/branch/main/graph/badge.svg)](https://codecov.io/gh/sarangnair1998/TTD_pairB) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 
 ## Overview

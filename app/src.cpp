@@ -1,7 +1,6 @@
 #include "lib1.hpp"
 
 double PidController::compute_speed() {
-
   double error = desired_speed_ - actual_speed_;
 
   // Proportional term
