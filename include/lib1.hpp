@@ -51,7 +51,7 @@ class PidController {
   //<! Derivative gain
   double kd_{0.10};
   //<! Preset speed
-  double actual_speed_{50.0};
+  double actual_speed_{100.0};
   //<! integral error
   double integral_{0};
   //<! previous error for derivative gain
