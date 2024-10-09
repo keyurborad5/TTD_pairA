@@ -1,12 +1,17 @@
 # TDD Pair A
 # C++ Boilerplate v2 Badges
-![CICD Workflow status](https://github.com/keyurborad5/TTD_pairA/actions/workflows/run-unit-test-and-upload-codecov.yml/badge.svg) [![codecov](https://codecov.io/gh/keyurborad5/TTD_pairA/branch/main/graph/badge.svg)](https://codecov.io/gh/keyurborad5/TTD_pairA) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+![CICD Workflow status](https://github.com/sarangnair1998/TTD_pairB/actions/workflows/run-unit-test-and-upload-codecov.yml/badge.svg) [![codecov](https://codecov.io/gh/sarangnair1998/TTD_pairB/branch/main/graph/badge.svg)](https://codecov.io/gh/sarangnair1998/TTD_pairB) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 
 ## Overview
 ## Part1
 - Driver : Keyur Borad - @KeyurBorad5
 - Navigator: Uthappa Madettira - @Uthappa13
+
+## Part2
+
+- Driver : Sarang - (https://github.com/sarangnair1998)
+- Navigator: Sounderya- (https://github.com/Sounderya22)
 
 ## Program
 - This PID controller has preset KP,KI,KD values
@@ -15,6 +20,12 @@
 - Code calculates the speed to be achieved after one time step as here we are calculating only for 1 time step for simplicity.
 - For example is entered desire speed is 50 then output speed would be calculated based on error difference of actual(100) and desired speed(50)
 
+
+## Potential Tests
+
+- Test for negative desired speed: Ensure the controller behaves correctly when the desired speed is negative or zero.
+- Simulate a large step change in the desired speed and ensure the controller responds correctly.
+- Test that resetting the PID controller clears its internal states (such as integral and previous error).
 
 ## Run program
 ```bash
@@ -94,3 +105,4 @@ clang-format -style=Google -i your_file.cpp
 # Clean and start over:
   rm -rf build/
 #************  END ****************
+

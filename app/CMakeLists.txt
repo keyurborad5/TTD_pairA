@@ -1,24 +1,15 @@
-# Any C++ source files needed to build this target (shell-app).
-add_executable(shell-app
+# Create a library from the src.cpp file
+add_library(PID_lib
   # list of source cpp files:
-  main.cpp
-  )
+  src.cpp
+)
 
-# Any include directories needed to build this target.
-# Note: we do not need to specify the include directories for the
-# dependent libraries, they are automatically included.
-target_include_directories(shell-app PUBLIC
-  # list inclue directories:
+target_include_directories(PID_lib PUBLIC
   ${CMAKE_SOURCE_DIR}/include
 )
 
-# Any dependent libraires needed to build this target.
-target_link_libraries(shell-app PUBLIC
-  # list of libraries
-  myLib1
-  )
+add_executable(shell-app
+  main.cpp
+)
 
-target_link_options(shell-app PUBLIC
-  --static
-  )
-  
+target_link_libraries(shell-app PID_lib)
